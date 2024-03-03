@@ -21,7 +21,7 @@ def bag_of_words(sentence, words):
     return bag
 
 # Load intents from JSON file
-with open('C:\\Users\\jainam\\StudyBud\\chatbot\\intents.json', 'r') as file:
+with open('C:\\Users\\jainam\\HarmonyHive\\chatbot\\intents.json', 'r') as file:
     intents = json.load(file)
 
 # Tokenize patterns
@@ -105,8 +105,8 @@ for epoch in range(num_epochs):
     loss.backward()
     optimizer.step()
 
-    # if (epoch+1) % 100 == 0:
-    #     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
+    if (epoch+1) % 100 == 0:
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
 # Save the trained model
 torch.save(model.state_dict(), 'chatbot_model.pth')

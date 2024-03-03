@@ -23,7 +23,7 @@
         }
 
         .card {
-            height: 720px;
+            height: 680px;
             margin-top: 40px;
             /* width: 800px; */
             border-radius: 15px !important;
@@ -286,7 +286,8 @@
             /* border-radius:30px; */
             height:47px;
             width:90px;
-            margin-left:780px;
+            margin-left:650px;
+            /* float: right; */
             color:white;
             font-size:1rem;
         }
@@ -305,7 +306,7 @@
     </style>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Include your CSS and other head elements here -->
 </head>
 
@@ -316,10 +317,8 @@
                 <div class="card">
                     <div class="card-header msg_head">
                         <div class="d-flex bd-highlight">
-                            <div class="img_cont">
-                                <img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png"
-                                    class="rounded-circle user_img" style="height:55px;width:55px">
-                                <span class="online_icon" style="height:15px;margin-right:3px;margin-bottom: 8px;"></span>
+                            <div class="img_cont" style="font-size:2.4rem;">
+                                <i class="fa-brands fa-bots" style="color: #ffffff;"></i><span class="online_icon" style="height:15px;margin-right:3px;margin-bottom: 8px;"></span>
                             </div>
                             <div class="user_info">
                                 <span style="font-size:1.5rem">Depthera.ai</span>
@@ -333,13 +332,11 @@
                     <div id="messageFormeight" class="card-body msg_card_body">
                         {% for message in chat_history %}
                         <div class="d-flex justify-content-end mb-4">
-                            <div class="msg_cotainer" style="margin-right:9px">{{ message.user }}</div>
-                            <div class="img_cont_msg"><img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png"
-                                    class="rounded-circle user_img_msg" style="height: 40px;"></div>
+                            <div class="msg_cotainer" style="margin-right:12px">{{ message.user }}</div>
+                            <div class="img_cont_msg" style="font-size:1.5rem;margin-left: 3px;"><i class="fa-solid fa-user" style="color: #ffffff;"></i></div>
                         </div>
                         <div class="d-flex justify-content-start mb-4">
-                            <div class="img_cont_msg"><img src="https://i.ibb.co/fSNP7Rz/icons8-chatgpt-512.png"
-                                    class="rounded-circle user_img_msg" style="height: 40px;"></div>
+                            <div class="img_cont_msg" style="font-size:1.8rem;"><i class="fa-brands fa-bots" style="color: #ffffff;"></i></div>
                             <div class="msg_cotainer">{{ message.bot }}</div>
                         </div>
                         {% endfor %}
