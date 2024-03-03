@@ -1,0 +1,1282 @@
+{
+    "intents": [
+      { "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell coffee and tea",
+        "We have coffee and tea"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+      {
+        "tag": "depression_intro",
+        "patterns": ["What is depression?", "Tell me about depression", "What does depression mean?", "Define depression"],
+        "responses": ["Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest.", "Depression is a common and serious medical illness that negatively affects how you feel, the way you think, and how you act."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_symptoms",
+        "patterns": ["What are the symptoms of depression?", "How do I know if I'm depressed?", "Signs of depression", "Depression signs"],
+        "responses": ["Symptoms of depression include feelings of sadness, hopelessness, loss of interest in activities, changes in appetite or sleep patterns, and more.", "Common symptoms of depression include persistent sadness, irritability, loss of interest in activities, changes in appetite or weight, and difficulty sleeping or oversleeping."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_help",
+        "patterns": ["How can I get help for depression?", "what should i do?","Where can I find help for depression?", "Depression treatment options", "Getting help for depression"],
+        "responses": ["You can seek help from a mental health professional, such as a therapist or psychiatrist. Treatment options may include therapy, medication, or a combination of both.", "There are several ways to get help for depression, including therapy, medication, support groups, and lifestyle changes."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_cure",
+        "patterns": [
+          "What are some general strategies for coping with depression?",
+          "Can you provide tips for managing depressive symptoms?",
+          "What lifestyle changes can help alleviate depression?",
+          "Are there specific activities or exercises that may contribute to overcoming depression?",
+          "How can social connections play a role in treating depression?",
+          "Are there any professional interventions recommended for treating depression?",
+          "Can you suggest self-care practices for someone dealing with depression?"
+        ],
+        "responses": [
+          "General strategies for coping with depression include maintaining a healthy lifestyle, seeking social support, and engaging in activities you enjoy.",
+          "To manage depressive symptoms, consider incorporating regular exercise, practicing mindfulness, and ensuring an adequate amount of sleep.",
+          "Lifestyle changes such as a balanced diet, regular physical activity, and sufficient sleep can contribute to alleviating depression.",
+          "Engaging in activities like regular exercise, yoga, or creative pursuits can be beneficial for overcoming depression.",
+          "Building and maintaining social connections is crucial; try to spend time with friends and family or consider joining support groups.",
+          "Professional interventions like therapy or counseling may be recommended for treating depression, and in some cases, medication may be prescribed.",
+          "Self-care practices, including setting boundaries, practicing self-compassion, and incorporating relaxation techniques, can be helpful for individuals dealing with depression."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_causes",
+        "patterns": ["What causes depression?", "Why do people get depressed?", "Factors contributing to depression", "Causes of depression"],
+        "responses": ["Depression can be caused by a combination of genetic, biological, environmental, and psychological factors.", "The exact cause of depression is not known, but it is believed to be caused by a combination of genetic, biological, environmental, and psychological factors."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_coping",
+        "patterns": ["How can I cope with depression?", "Ways to manage depression", "Self-help strategies for depression", "Coping with depression"],
+        "responses": ["Coping with depression may involve engaging in activities you enjoy, staying connected with others, getting regular exercise, and seeking support from loved ones.", "There are several coping strategies for depression, including practicing self-care, staying connected with others, getting regular exercise, and seeking professional help."],
+        "context_set": ""
+      },
+      {
+        "tag": "okay",
+        "patterns": ["okay", "ok"],
+        "responses": ["Yeah!"],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_stigma",
+        "patterns": ["How can we reduce the stigma around depression?", "Overcoming stigma related to mental health", "Reducing stigma around depression"],
+        "responses": ["Reducing stigma around depression and mental health involves education, awareness, and promoting empathy and understanding.", "To reduce the stigma around depression, it's important to educate others, share personal stories, and promote acceptance and understanding."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_types",
+        "patterns": ["What are the different types of depression?", "Types of depressive disorders", "Depression types"],
+        "responses": ["Some types of depression include major depressive disorder, persistent depressive disorder, bipolar disorder, and seasonal affective disorder.", "There are several types of depressive disorders, including major depressive disorder, persistent depressive disorder, bipolar disorder, and more."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_prevention",
+        "patterns": ["Can depression be prevented?", "Preventing depression", "How to prevent depression"],
+        "responses": ["While depression may not always be preventable, certain lifestyle changes, such as maintaining a healthy diet, getting regular exercise, and managing stress, may help reduce the risk.", "There is no sure way to prevent depression, but certain lifestyle changes may help reduce the risk, such as maintaining a healthy diet, getting regular exercise, and avoiding alcohol and drugs."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_relationships",
+        "patterns": ["How does depression affect relationships?", "Effects of depression on relationships", "Depression and relationships"],
+        "responses": ["Depression can impact relationships by causing changes in mood, behavior, and communication patterns. It's important to seek support and communicate openly with loved ones.", "Depression can strain relationships by causing changes in mood, behavior, and communication. It's important to seek help and support from loved ones."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_children",
+        "patterns": ["How does depression manifest in children?", "Signs of depression in kids", "Children and depression"],
+        "responses": ["Depression in children may present as irritability, social withdrawal, changes in appetite or sleep, and physical complaints. It's important to seek professional help if you suspect depression in a child.", "Depression in children may manifest as changes in behavior, moodiness, irritability, and physical complaints. It's important to seek help from a mental health professional if you suspect depression in a child."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_teens",
+        "patterns": ["How does depression manifest in teenagers?", "Teenage depression signs", "Teenagers and depression"],
+        "responses": ["Teenagers with depression may exhibit symptoms such as irritability, anger, social withdrawal, changes in appetite or sleep patterns, and feelings of worthlessness or guilt.", "Depression in teenagers may present as changes in behavior, moodiness, social withdrawal, and academic problems. It's important to seek help from a mental health professional if you suspect depression in a teenager."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_family",
+        "patterns": ["How does depression affect families?", "Impact of depression on family", "Depression and family"],
+        "responses": ["Depression can strain relationships within families due to changes in mood, behavior, and communication. Family therapy and support can be beneficial.", "Depression can impact families by causing changes in mood, behavior, and communication. It's important for families to seek support and communicate openly."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_medications",
+        "patterns": ["What medications are used to treat depression?", "Types of antidepressants", "Depression medications"],
+        "responses": ["Antidepressant medications, such as SSRIs, SNRIs, and tricyclic antidepressants, are commonly used to treat depression. It's important to consult a healthcare professional for proper diagnosis and treatment.", "There are several types of antidepressant medications used to treat depression, including SSRIs, SNRIs, and tricyclic antidepressants. It's important to discuss treatment options with a healthcare provider."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_therapy",
+        "patterns": ["What types of therapy are used to treat depression?", "Therapeutic approaches for depression", "Depression therapy"],
+        "responses": ["Therapies such as cognitive behavioral therapy (CBT), interpersonal therapy (IPT), and psychodynamic therapy are commonly used to treat depression. Individual and group therapy sessions may be recommended.", "There are several types of therapy used to treat depression, including cognitive behavioral therapy (CBT), interpersonal therapy (IPT), and psychodynamic therapy. It's important to find a therapy that works for you."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_selfcare",
+        "patterns": ["What self-care practices are beneficial for depression?", "Self-care tips for depression", "Depression self-care"],
+        "responses": ["Self-care practices for depression may include getting regular exercise, maintaining a healthy diet, getting enough sleep, practicing relaxation techniques, and seeking support from others.", "Self-care is an important part of managing depression. Some self-care practices include getting regular exercise, eating a balanced diet, getting enough sleep, and engaging in activities you enjoy."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_work",
+        "patterns": ["How does depression impact work?", "Dealing with depression in the workplace", "Depression and work"],
+        "responses": ["Depression can impact work performance, motivation, and interpersonal relationships at work. It's important to communicate with your employer and seek support from a mental health professional.", "Depression can affect work by causing difficulties with concentration, motivation, and interpersonal relationships. It's important to seek help and support from your employer and mental health professionals."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_suicide",
+        "patterns": ["How can I help someone who is suicidal due to depression?", "Suicidal thoughts and depression", "Helping someone with suicidal thoughts"],
+        "responses": ["If someone is suicidal due to depression, it's important to take their thoughts and feelings seriously, listen non-judgmentally, and encourage them to seek help from a mental health professional or a crisis hotline.", "If you know someone who is suicidal due to depression, it's important to offer support, listen without judgment, and encourage them to seek help from a mental health professional or a crisis hotline."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_recovery",
+        "patterns": ["Is recovery from depression possible?", "Overcoming depression", "Can you recover from depression?"],
+        "responses": ["Recovery from depression is possible with proper treatment, support, and self-care. It's important to seek help from a mental health professional and follow their recommendations.", "Yes, recovery from depression is possible. With the right treatment and support, many people recover from depression and lead fulfilling lives."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_community",
+        "patterns": ["Are there online communities for people with depression?", "Depression support groups", "Online depression communities"],
+        "responses": ["Yes, there are online communities and support groups for people with depression where you can connect with others, share experiences, and find support.", "There are several online communities and support groups for people with depression. These communities provide a safe space to connect with others, share experiences, and find support."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_resources",
+        "patterns": ["Where can I find more resources on depression?", "Depression information sources", "Depression resources"],
+        "responses": ["You can find more information and resources on depression from mental health organizations, healthcare providers, and reputable websites.", "There are several resources available for learning more about depression, including mental health organizations, healthcare providers, and online resources."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_diagnosis",
+        "patterns": ["How is depression diagnosed?", "Diagnosing depression", "Depression assessment"],
+        "responses": ["Depression is typically diagnosed based on a thorough assessment of symptoms, medical history, and sometimes psychological tests. It's important to consult a healthcare professional for an accurate diagnosis."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_recovery_timeline",
+        "patterns": ["How long does it take to recover from depression?", "Depression recovery timeline"],
+        "responses": ["The recovery timeline for depression varies for each individual. It may take weeks, months, or even longer to fully recover. Consistent treatment, support, and self-care practices are important for recovery."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_relapse",
+        "patterns": ["Can depression relapse?", "Relapse of depression"],
+        "responses": ["Yes, depression can relapse, meaning that symptoms return after a period of improvement. It's important to continue with treatment and self-care practices to reduce the risk of relapse."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_impact",
+        "patterns": ["How does depression impact daily life?", "Effects of depression on daily functioning"],
+        "responses": ["Depression can impact various aspects of daily life, including work, relationships, physical health, and overall well-being. It can lead to difficulties in concentration, fatigue, changes in appetite or sleep, and more."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_myths",
+        "patterns": ["What are some common myths about depression?", "Depression misconceptions"],
+        "responses": ["Common myths about depression include the idea that it's just feeling sad, that it's a sign of weakness, or that it can be easily overcome without professional help. It's important to dispel these myths and seek accurate information about depression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_gender",
+        "patterns": ["Is depression more common in a specific gender?", "Gender differences in depression"],
+        "responses": ["Depression can affect people of all genders, but there may be differences in how it manifests or is perceived. It's important to seek help regardless of gender."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_society",
+        "patterns": ["How does society view depression?", "Social attitudes towards depression"],
+        "responses": ["Society's views on depression may vary, but there is a growing understanding of mental health issues and efforts to reduce stigma. It's important to promote acceptance, understanding, and support for those affected by depression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_art",
+        "patterns": ["Can art therapy help with depression?", "Benefits of art therapy for depression"],
+        "responses": ["Art therapy can be a beneficial form of therapy for some people with depression. It can help express emotions, reduce stress, and promote relaxation and self-discovery."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_music",
+        "patterns": ["How can music help with depression?", "Benefits of music for depression"],
+        "responses": ["Music can have a positive impact on mood and emotions, making it a helpful tool for managing depression. Listening to music can evoke memories, improve mood, and provide a sense of comfort."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_pet",
+        "patterns": ["Can having a pet help with depression?", "Pets and depression"],
+        "responses": ["Having a pet can provide companionship, reduce feelings of loneliness, and increase physical activity, which can be beneficial for managing depression. Pets can offer unconditional love and support."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_technology",
+        "patterns": ["How does technology affect depression?", "Impact of technology on depression"],
+        "responses": ["Technology can have both positive and negative effects on depression. While it can provide access to information, support, and resources, excessive use or misuse of technology may contribute to feelings of isolation or inadequacy."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_nature",
+        "patterns": ["Can spending time in nature help with depression?", "Nature therapy for depression"],
+        "responses": ["Spending time in nature, also known as ecotherapy or green therapy, can have a positive impact on mental health, including reducing symptoms of depression. Nature can promote relaxation, reduce stress, and improve mood."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_sleep",
+        "patterns": ["How does depression affect sleep?", "Depression and sleep problems"],
+        "responses": ["Depression can disrupt sleep patterns, leading to difficulties falling asleep, staying asleep, or experiencing restful sleep. Addressing depression and practicing good sleep hygiene can help improve sleep quality."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_exercise",
+        "patterns": ["Can exercise help with depression?", "Benefits of exercise for depression"],
+        "responses": ["Regular exercise can be beneficial for managing depression. Exercise can help improve mood, reduce stress, and increase energy levels. It's important to find an exercise routine that works for you."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_meditation",
+        "patterns": ["Can meditation help with depression?", "Meditation for depression"],
+        "responses": ["Meditation and mindfulness practices can be effective tools for managing depression. They can help reduce stress, increase self-awareness, and promote emotional well-being."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_support",
+        "patterns": ["Where can I find support for depression?", "Depression support resources"],
+        "responses": ["You can find support for depression from mental health professionals, support groups, hotlines, and online resources. It's important to reach out for help when needed."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_journaling",
+        "patterns": ["How can journaling help with depression?", "Benefits of journaling for depression"],
+        "responses": ["Journaling can be a therapeutic tool for managing depression. It can help clarify thoughts and emotions, track patterns, and provide a sense of release and self-expression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_goals",
+        "patterns": ["Setting goals for managing depression", "Achieving goals with depression"],
+        "responses": ["Setting and achieving small, realistic goals can be a helpful strategy for managing depression. It can provide a sense of accomplishment and motivation."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_thoughts",
+        "patterns": ["How can I change negative thoughts associated with depression?", "Cognitive restructuring for depression"],
+        "responses": ["Cognitive restructuring techniques can help challenge and change negative thoughts associated with depression. It involves identifying and replacing negative thought patterns with more positive and realistic ones."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_workplace",
+        "patterns": ["How does depression impact performance at work?", "Managing depression in the workplace"],
+        "responses": ["Depression can affect performance, motivation, and relationships at work. It's important to communicate with your employer and seek support from a mental health professional."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_pregnancy",
+        "patterns": ["How does depression affect pregnancy?", "Depression during pregnancy"],
+        "responses": ["Depression during pregnancy, known as prenatal depression, can impact the health of both the mother and the baby. It's important to seek support and treatment."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_postpartum",
+        "patterns": ["How does depression affect new mothers?", "Postpartum depression symptoms"],
+        "responses": ["Postpartum depression is a common condition that can affect new mothers. Symptoms may include feelings of sadness, anxiety, and fatigue. It's important to seek help if you're experiencing postpartum depression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_elderly",
+        "patterns": ["How does depression affect the elderly?", "Depression in older adults"],
+        "responses": ["Depression in older adults is common but not a normal part of aging. It can be overlooked or mistaken for other conditions. It's important for older adults to seek help for depression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_cultural",
+        "patterns": ["How is depression viewed in different cultures?", "Cultural perspectives on depression"],
+        "responses": ["Depression may be viewed and experienced differently in various cultures. Cultural factors can influence how depression is understood, expressed, and treated."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_therapy_types",
+        "patterns": ["What are the different types of therapy for depression?", "Therapy options for depression"],
+        "responses": ["Some common types of therapy for depression include cognitive behavioral therapy (CBT), interpersonal therapy (IPT), and psychodynamic therapy. It's important to find a therapy approach that works for you."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_recovery_goals",
+        "patterns": ["Setting recovery goals for depression", "Achieving recovery from depression"],
+        "responses": ["Setting realistic and achievable goals is an important part of the recovery process from depression. It can help you stay motivated and track your progress."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_research",
+        "patterns": ["What research is being done on depression?", "Current depression research"],
+        "responses": ["There is ongoing research on depression to better understand its causes, develop new treatments, and improve outcomes for those affected. Research areas include genetics, brain chemistry, and treatment effectiveness."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_medication_options",
+        "patterns": ["What medications are available for depression?", "Medication options for depression"],
+        "responses": ["Antidepressant medications are commonly used to treat depression. The type of medication prescribed will depend on individual factors and the specific symptoms experienced. It's important to work with a healthcare provider to find the right medication and dosage."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_workplace_support",
+        "patterns": ["How can employers support employees with depression?", "Depression support in the workplace"],
+        "responses": ["Employers can support employees with depression by providing a supportive work environment, offering flexible work arrangements, and promoting mental health awareness. It's important for employees to feel comfortable seeking help and support."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_mental_health",
+        "patterns": ["Is depression a sign of mental illness?", "Depression and mental health"],
+        "responses": ["Depression is a mental health condition that can affect thoughts, emotions, and behaviors. It's important to seek help from a mental health professional for an accurate diagnosis and appropriate treatment."],
+        "context_set": ""
+      },
+      {"tag": "depression_social",
+      "patterns": ["How does social media impact depression?", "Social media and depression"],
+      "responses": ["Social media can have both positive and negative effects on mental health, including depression. It can provide social support and connection, but also contribute to feelings of inadequacy or isolation."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_cognitive_behavioral_therapy",
+      "patterns": ["What is cognitive behavioral therapy (CBT)?", "CBT for depression"],
+      "responses": ["Cognitive behavioral therapy (CBT) is a common form of therapy used to treat depression. It focuses on changing negative thought patterns and behaviors to improve mood and coping skills."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_support_groups",
+      "patterns": ["Are there support groups for depression?", "Depression support group"],
+      "responses": ["Yes, there are support groups for depression where individuals can share experiences, provide mutual support, and learn coping strategies. These groups can be in-person or online."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_mental_health",
+      "patterns": ["How does depression affect mental health?", "Impact of depression on mental well-being"],
+      "responses": ["Depression can significantly impact mental health by causing feelings of sadness, hopelessness, and worthlessness. It can also lead to difficulties in concentration, memory, and decision-making."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_physical_health",
+      "patterns": ["How does depression affect physical health?", "Effects of depression on physical well-being"],
+      "responses": ["Depression can affect physical health by increasing the risk of various health problems, such as heart disease, diabetes, and chronic pain. It can also weaken the immune system."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_loneliness",
+      "patterns": ["How does depression contribute to loneliness?", "Loneliness and depression"],
+      "responses": ["Depression can contribute to feelings of loneliness and isolation, and vice versa. It's important to seek support and connect with others to reduce feelings of loneliness."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_self_esteem",
+      "patterns": ["How does depression affect self-esteem?", "Self-esteem and depression"],
+      "responses": ["Depression can significantly impact self-esteem by causing negative thoughts and feelings of inadequacy. It's important to work on building self-esteem through positive self-talk and self-care."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_recovery_tips",
+      "patterns": ["Tips for recovering from depression", "Recovery strategies for depression"],
+      "responses": ["Recovering from depression may involve seeking professional help, engaging in self-care practices, staying connected with others, and setting realistic goals. It's important to be patient and persistent in the recovery process."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_adults",
+      "patterns": ["How does depression manifest in adults?", "Adult depression symptoms"],
+      "responses": ["Depression in adults may manifest as persistent feelings of sadness, loss of interest in activities, changes in appetite or sleep patterns, and difficulty concentrating or making decisions."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_medical_conditions",
+      "patterns": ["Can other medical conditions cause depression?", "Medical conditions and depression"],
+      "responses": ["Yes, other medical conditions, such as chronic illness, neurological disorders, and hormonal imbalances, can contribute to or cause depression. It's important to address both the medical condition and depression for effective treatment."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_drug_abuse",
+      "patterns": ["How does drug abuse relate to depression?", "Drug abuse and depression"],
+      "responses": ["Drug abuse can be both a cause and a consequence of depression. Substance abuse can worsen depression symptoms and interfere with treatment. It's important to seek help for both issues."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_seasonal",
+      "patterns": ["What is seasonal affective disorder (SAD)?", "Seasonal depression"],
+      "responses": ["Seasonal affective disorder (SAD) is a type of depression that occurs at a specific time of year, usually in the winter months when there is less natural sunlight. It can be treated with light therapy, counseling, or medication."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_anger",
+      "patterns": ["How does depression manifest as anger?", "Anger and depression"],
+      "responses": ["Depression can manifest as irritability, anger, or hostility in some individuals. It's important to recognize these symptoms and seek help to address underlying depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_eating_disorders",
+      "patterns": ["How are depression and eating disorders related?", "Depression and eating disorders"],
+      "responses": ["Depression and eating disorders often co-occur, and one can exacerbate the other. It's important to address both issues in treatment to promote overall well-being."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_work_life_balance",
+      "patterns": ["How does depression affect work-life balance?", "Balancing work and depression"],
+      "responses": ["Depression can disrupt work-life balance by affecting energy levels, motivation, and ability to cope with stress. It's important to prioritize self-care and seek support to maintain balance."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_stress",
+      "patterns": ["How does stress contribute to depression?", "Stress and depression"],
+      "responses": ["Chronic stress can contribute to the development or worsening of depression. It's important to manage stress through relaxation techniques, healthy coping mechanisms, and seeking support."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_relationship",
+      "patterns": ["How does depression affect relationships?", "Relationships and depression"],
+      "responses": ["Depression can strain relationships by causing changes in mood, communication, and behavior. It's important to communicate openly, seek support, and work together to manage depression in a relationship."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_sleep_disorders",
+      "patterns": ["How are depression and sleep disorders related?", "Depression and sleep problems"],
+      "responses": ["Depression can contribute to sleep disorders, such as insomnia or hypersomnia. Disrupted sleep patterns can also worsen depression symptoms. It's important to address both issues for better overall health."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_recovery_support",
+      "patterns": ["Where can I find support during my depression recovery?", "Depression recovery resources"],
+      "responses": ["You can find support during your depression recovery from mental health professionals, support groups, online forums, and community resources. It's important to reach out for help and build a support network."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_coping_strategies",
+      "patterns": ["Effective coping strategies for dealing with depression", "Coping with depression"],
+      "responses": ["Effective coping strategies for dealing with depression include engaging in activities you enjoy, practicing relaxation techniques, staying connected with others, and seeking professional help when needed."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_children_teens",
+      "patterns": ["How does depression manifest in children and teenagers?", "Depression in kids and teens"],
+      "responses": ["Depression in children and teenagers may manifest as irritability, social withdrawal, changes in appetite or sleep, and physical complaints. It's important to seek help if you suspect depression in a child or teenager."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_treatment_options",
+      "patterns": ["What are the treatment options for depression?", "Depression treatment"],
+      "responses": ["Treatment options for depression include therapy, medication, lifestyle changes, and self-care practices. It's important to work with a healthcare professional to determine the best approach for your individual needs."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_caregiver_support",
+      "patterns": ["How can caregivers support someone with depression?", "Supporting a loved one with depression"],
+      "responses": ["Caregivers can support someone with depression by providing empathy, encouragement, and practical help. It's important for caregivers to take care of themselves as well."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_creativity",
+      "patterns": ["How does depression affect creativity?", "Creativity and depression"],
+      "responses": ["Depression can affect creativity by dampening mood, motivation, and inspiration. However, some people find that their creativity is a source of expression and coping during difficult times."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_empowerment",
+      "patterns": ["How can I empower myself while dealing with depression?", "Empowerment and depression"],
+      "responses": ["Empowering yourself while dealing with depression involves recognizing your strengths, setting realistic goals, seeking support, and practicing self-care. It's important to take small steps and celebrate your achievements."],
+      "context_set": ""
+    },
+      {
+        "tag": "depression_subtypes",
+        "patterns": ["What are the subtypes of depression?", "Types of depression subcategories"],
+        "responses": ["Subtypes of depression include major depressive disorder (MDD), persistent depressive disorder (PDD), and seasonal affective disorder (SAD), among others. Each subtype may have different symptoms and treatment approaches."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_life_changes",
+        "patterns": ["How can life changes impact depression?", "Effects of life changes on depression"],
+        "responses": ["Life changes, such as moving, starting a new job, or experiencing a loss, can trigger or worsen depression symptoms. It's important to seek support during times of change and prioritize self-care."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_sleep_disorders",
+        "patterns": ["Can depression lead to sleep disorders?", "Depression and sleep issues"],
+        "responses": ["Depression can disrupt sleep patterns, leading to insomnia or other sleep disorders. Addressing depression and practicing good sleep hygiene can help improve sleep quality."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_technology_support",
+        "patterns": ["How can technology be used to support people with depression?", "Technology for depression support"],
+        "responses": ["Technology can be used to provide support and resources for people with depression, such as online therapy, mental health apps, and telemedicine. It can increase access to care and promote self-management."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_cognitive_function",
+        "patterns": ["How does depression affect cognitive function?", "Depression and cognitive abilities"],
+        "responses": ["Depression can affect cognitive functions such as memory, concentration, and decision-making. It's important to seek treatment for depression to improve cognitive function and overall well-being."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_nutrition",
+        "patterns": ["Can nutrition affect depression?", "Diet and depression"],
+        "responses": ["Nutrition plays a role in mental health, and a balanced diet can support overall well-being, including mental health. Certain nutrients, such as omega-3 fatty acids and B vitamins, may be beneficial for managing depression."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_recovery_support",
+        "patterns": ["How can family and friends support someone recovering from depression?", "Supporting a loved one with depression"],
+        "responses": ["Family and friends can support someone recovering from depression by offering empathy, understanding, and encouragement. They can also help with practical tasks and provide a listening ear."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_gender_differences",
+        "patterns": ["Are there differences in how depression affects different genders?", "Gender and depression"],
+        "responses": ["Depression can affect people of all genders, but there may be differences in how it is experienced or expressed. It's important to seek help and support regardless of gender."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_social_media",
+        "patterns": ["How does social media impact depression?", "Social media and depression"],
+        "responses": ["Social media can have both positive and negative effects on mental health, including depression. It's important to use social media mindfully and seek support if you're feeling overwhelmed or distressed."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_children_parents",
+        "patterns": ["How can parents support children with depression?", "Parenting a child with depression"],
+        "responses": ["Parents can support children with depression by providing a supportive and understanding environment, seeking professional help, and helping their child develop coping skills. It's important to communicate openly and honestly with your child."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_art_therapy",
+        "patterns": ["How does art therapy help with depression?", "Benefits of art therapy for depression"],
+        "responses": ["Art therapy can be a beneficial form of therapy for some people with depression. It can help express emotions, reduce stress, and promote self-discovery and healing."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_work_life_balance",
+        "patterns": ["How can work-life balance affect depression?", "Balancing work and depression"],
+        "responses": ["Achieving a balance between work and personal life can be important for managing depression. It's important to prioritize self-care and seek support when needed."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_rumination",
+        "patterns": ["How does rumination contribute to depression?", "Rumination and depression"],
+        "responses": ["Rumination, or repeatedly thinking about negative experiences or feelings, can contribute to depression by maintaining a negative mindset. Cognitive behavioral therapy (CBT) can help break this cycle."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_personality",
+        "patterns": ["Is there a link between personality and depression?", "Personality traits and depression"],
+        "responses": ["Certain personality traits, such as pessimism, perfectionism, and neuroticism, may be associated with a higher risk of depression. However, depression is a complex condition with multiple factors involved."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_recovery_support",
+        "patterns": ["How can peers support each other in recovery from depression?", "Peer support for depression"],
+        "responses": ["Peer support can be a valuable resource for individuals recovering from depression. It provides understanding, empathy, and encouragement from others who have had similar experiences."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_positive_thinking",
+        "patterns": ["How can positive thinking help with depression?", "Benefits of positive thinking for depression"],
+        "responses": ["Positive thinking can help improve mood, reduce stress, and enhance overall well-being, which can be beneficial for managing depression. It involves focusing on positive aspects of life and challenging negative thoughts."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_trauma",
+        "patterns": ["Can past trauma contribute to depression?", "Trauma and depression"],
+        "responses": ["Past trauma, such as abuse, neglect, or other traumatic experiences, can increase the risk of developing depression. It's important to seek support and treatment to address the effects of trauma."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_motivation",
+        "patterns": ["How does depression affect motivation?", "Motivation and depression"],
+        "responses": ["Depression can impact motivation, making it difficult to engage in activities or pursue goals. Setting small, achievable goals and seeking support can help improve motivation."],
+        "context_set": ""
+      },
+      {
+        "tag": "depression_health_impact",
+        "patterns": ["How does depression affect physical health?", "Physical effects of depression"],
+        "responses": ["Depression can have physical effects on the body, including changes in appetite, sleep disturbances, fatigue, and aches and pains. It's important to address both the physical and emotional aspects of depression."],
+        "context_set": ""
+      },
+      {"tag": "depression_education",
+      "patterns": ["Where can I learn more about depression?", "Depression information resources"],
+      "responses": ["You can learn more about depression from reputable sources such as mental health organizations, healthcare providers, and online resources dedicated to mental health."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_stress",
+      "patterns": ["How does stress relate to depression?", "Stress and depression"],
+      "responses": ["Stress can contribute to the development or exacerbation of depression. Managing stress through healthy coping mechanisms can help reduce the risk of depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_loneliness",
+      "patterns": ["How does loneliness affect depression?", "Loneliness and depression"],
+      "responses": ["Loneliness can exacerbate feelings of depression and vice versa. It's important to seek social connections and support to combat loneliness and depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_creative",
+      "patterns": ["How can creative activities help with depression?", "Benefits of creativity for depression"],
+      "responses": ["Engaging in creative activities, such as art, music, or writing, can provide a therapeutic outlet for expressing emotions and improving mood."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_routine",
+      "patterns": ["How does establishing a routine help with depression?", "Routine and depression management"],
+      "responses": ["Establishing a routine can provide structure and stability, which can be beneficial for managing depression. It can help regulate sleep, meals, and activities."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_mental_health",
+      "patterns": ["Why is mental health important for managing depression?", "Role of mental health in depression"],
+      "responses": ["Maintaining good mental health is important for managing depression. It involves taking care of your emotional, psychological, and social well-being."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_acceptance",
+      "patterns": ["How can I accept my depression?", "Acceptance of depression"],
+      "responses": ["Accepting your depression involves acknowledging your feelings and seeking help and support. It's an important step towards managing and coping with depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_medical_conditions",
+      "patterns": ["Can other medical conditions contribute to depression?", "Medical conditions and depression"],
+      "responses": ["Certain medical conditions, such as chronic illness, hormonal imbalances, or neurological disorders, can contribute to the development of depression. It's important to address these conditions in conjunction with depression treatment."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_cognitive_distortions",
+      "patterns": ["How can I identify and address cognitive distortions related to depression?", "Cognitive distortions and depression"],
+      "responses": ["Identifying and addressing cognitive distortions, such as black-and-white thinking or catastrophizing, can help challenge negative thought patterns associated with depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_parenting",
+      "patterns": ["How does depression affect parenting?", "Parenting with depression"],
+      "responses": ["Depression can impact parenting by affecting your energy levels, mood, and ability to engage with your children. Seeking support and treatment can help you manage depression while parenting."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_guilt",
+      "patterns": ["How can I cope with feelings of guilt related to depression?", "Guilt and depression"],
+      "responses": ["Coping with feelings of guilt related to depression involves recognizing that depression is a medical condition and seeking help and support. It's important to practice self-compassion and avoid self-blame."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_future",
+      "patterns": ["How can I focus on the future while dealing with depression?", "Future outlook with depression"],
+      "responses": ["Focusing on the future while dealing with depression involves setting realistic goals, seeking support, and engaging in self-care practices. It's important to take small steps and celebrate progress."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_research",
+      "patterns": ["What research is being done on depression?", "Depression research"],
+      "responses": ["Research on depression includes studies on its causes, treatments, and prevention strategies. Researchers are exploring new therapies, biomarkers, and genetic factors related to depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_recovery_tips",
+      "patterns": ["Tips for recovering from depression", "Recovery strategies for depression"],
+      "responses": ["Recovering from depression may involve seeking professional help, engaging in therapy, practicing self-care, staying connected with others, and setting realistic goals."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_philosophy",
+      "patterns": ["What philosophical perspectives can help with depression?", "Philosophy and depression"],
+      "responses": ["Philosophical perspectives such as existentialism or stoicism can offer insights into the human experience of suffering and provide strategies for finding meaning and resilience in the face of depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_environment",
+      "patterns": ["How does the environment impact depression?", "Environmental factors and depression"],
+      "responses": ["Environmental factors such as stress, trauma, living conditions, and access to resources can impact the development and course of depression. Creating a supportive environment is important for managing depression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_anger",
+      "patterns": ["How does depression manifest as anger?", "Depression and anger"],
+      "responses": ["Depression can manifest as irritability or anger, especially in men. It's important to recognize these symptoms and seek appropriate help and support."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_social_media",
+      "patterns": ["How does social media affect depression?", "Social media and depression"],
+      "responses": ["Social media can impact depression by influencing self-esteem, social comparison, and feelings of isolation. Limiting social media use and seeking positive interactions can help manage its impact."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_isolation",
+      "patterns": ["How does isolation affect depression?", "Isolation and depression"],
+      "responses": ["Isolation can worsen depression by limiting social support and increasing feelings of loneliness. It's important to stay connected with others and seek support when feeling isolated."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_hobbies",
+      "patterns": ["How can hobbies help with depression?", "Hobbies for depression"],
+      "responses": ["Engaging in hobbies can provide a sense of accomplishment, enjoyment, and distraction from negative thoughts associated with depression. Hobbies can also promote social connection and self-expression."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_judgment",
+      "patterns": ["How does self-judgment impact depression?", "Self-judgment and depression"],
+      "responses": ["Self-judgment can contribute to feelings of worthlessness or inadequacy associated with depression. Practicing self-compassion and challenging negative self-talk can help improve self-esteem."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_benefits",
+      "patterns": ["Are there any benefits of experiencing depression?", "Positive aspects of depression"],
+      "responses": ["While depression is a challenging experience, some people may find that it leads to personal growth, increased empathy, and a deeper understanding of themselves and others."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_diet",
+      "patterns": ["How does diet affect depression?", "Diet and depression"],
+      "responses": ["A balanced diet rich in nutrients can support overall mental health and may help reduce the risk of depression. Eating regular, nutritious meals can help stabilize mood and energy levels."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_burnout",
+      "patterns": ["How does burnout relate to depression?", "Burnout and depression"],
+      "responses": ["Burnout, often caused by chronic stress, can contribute to the development of depression. It's important to recognize the signs of burnout and take steps to address it."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_boredom",
+      "patterns": ["How does boredom contribute to depression?", "Boredom and depression"],
+      "responses": ["Boredom can contribute to feelings of emptiness or lack of purpose, which are associated with depression. Engaging in meaningful activities and hobbies can help combat boredom and improve mood."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_books",
+      "patterns": ["What books are recommended for understanding depression?", "Depression books recommendations"],
+      "responses": ["There are several books that provide insights into depression, its causes, and strategies for coping and recovery. Some recommended books include 'The Noonday Demon' by Andrew Solomon and 'Feeling Good' by David D. Burns."],
+      "context_set": ""
+    },
+    {
+      "tag": "depression_quotes",
+      "patterns": ["Can you share some inspirational quotes about depression?", "Quotes about depression"],
+      "responses": ["You are stronger than your depression.", "This too shall pass.", "You are not alone in this fight.", "Every day may not be good, but there is something good in every day.", "You've survived 100% of your worst days so far. Keep going."],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How does shared travel experiences impact the dynamics of a relationship?",
+        "Navigating the complexities of a relationship with a significant age difference",
+        "Coping with the challenges of maintaining a long-distance relationship during a pandemic",
+        "Exploring the influence of childhood trauma on adult relationships",
+        "Fostering individual growth while being in a committed long-term relationship",
+        "Addressing the impact of a partner's mental health struggles on the relationship",
+        "Dealing with conflicting cultural expectations within a relationship",
+        "The role of humor in diffusing tension and strengthening a relationship",
+        "Coping with the changes in physical intimacy over the course of a relationship",
+        "Navigating the dynamics of a relationship where both partners have demanding careers",
+        "How can a couple establish financial goals and manage money together?",
+        "Balancing quality time with children and maintaining a strong romantic relationship",
+        "Exploring the impact of family traditions on the dynamics of a relationship",
+        "Addressing insecurities and building self-esteem within a romantic partnership",
+        "The role of technology in fostering connection and potential challenges in relationships",
+        "Balancing traditional and modern values within a multicultural relationship",
+        "How can couples support each other's individual hobbies and interests?",
+        "Coping with the challenges of a relationship during significant life changes",
+        "The impact of gender roles on relationship dynamics and expectations",
+        "Navigating the decision to live together and considerations for a successful cohabitation",
+        "The role of compromise in a healthy relationship and finding common ground",
+        "Coping with external family pressures and expectations within a relationship",
+        "Building trust after a breach of privacy and fostering open communication",
+        "How can couples maintain a sense of romance and spontaneity over the years?",
+        "Navigating the complexities of being in a relationship with a recovering addict",
+        "The influence of societal beauty standards on body image and self-esteem in relationships",
+        "Addressing the challenges and rewards of raising a blended family together",
+        "Balancing individual and joint decision-making in a long-term partnership",
+        "How can couples create and nurture shared dreams and aspirations?",
+        "Coping with the impact of a partner's past relationships on the current one",
+        "Exploring the influence of love languages on communication and connection",
+        "The role of jealousy in relationships and strategies for overcoming it",
+        "Balancing alone time and togetherness in a relationship with introverted partners",
+        "How can couples celebrate and navigate cultural and religious holidays together?",
+        "Coping with the challenges of a partner's chronic illness and maintaining intimacy",
+        "The impact of social media on trust and communication within a relationship",
+        "Navigating the decision to get married and considerations for a lasting union",
+        "Dealing with the consequences of infidelity and rebuilding trust",
+        "The role of external influences, such as friends, on relationship dynamics",
+        "Balancing the need for personal space during periods of stress in a relationship",
+        "How can couples maintain a sense of individual identity while building a life together?",
+        "Addressing the impact of past trauma on a partner's ability to trust and connect",
+        "Exploring the challenges and rewards of being in an open or polyamorous relationship",
+        "The influence of family values and upbringing on relationship expectations",
+        "Coping with the aftermath of a significant argument and rebuilding connection",
+        "How can couples create and sustain a healthy sexual connection over time?"
+      ],
+      "responses": [
+        "Shared travel experiences can impact a relationship by creating lasting memories and shared adventures.",
+        "Navigating a relationship with a significant age difference involves mutual respect and understanding.",
+        "Maintaining a long-distance relationship during a pandemic requires creativity and consistent communication.",
+        "Childhood trauma can influence adult relationships; seeking therapy together may be beneficial.",
+        "Fostering individual growth in a committed relationship involves support and encouragement from both partners.",
+        "Addressing a partner's mental health struggles involves empathy, communication, and professional support.",
+        "Dealing with conflicting cultural expectations requires open dialogue and finding common ground.",
+        "Humor plays a role in diffusing tension and strengthening a relationship; laughter can foster connection.",
+        "Changes in physical intimacy over time can be navigated through open communication and adaptability.",
+        "Balancing demanding careers in a relationship requires time management and shared goals.",
+        "Establishing financial goals and managing money together involves open communication and financial planning.",
+        "Balancing time with children and maintaining a strong romantic relationship requires prioritization and teamwork.",
+        "Family traditions can impact relationship dynamics; finding a balance that works for both partners is essential.",
+        "Addressing insecurities in a relationship involves open communication, reassurance, and building self-esteem.",
+        "Technology can foster connection in relationships but may also pose challenges; setting boundaries is important.",
+        "Balancing traditional and modern values in a multicultural relationship requires mutual respect and understanding.",
+        "Supporting each other's hobbies involves encouragement, shared interests, and respecting individual passions.",
+        "Coping with relationship challenges during life changes requires adaptability and emotional support.",
+        "Gender roles can influence relationship dynamics; open communication and mutual respect are crucial.",
+        "Living together requires compromise and understanding each other's preferences for successful cohabitation.",
+        "Compromise plays a role in a healthy relationship by fostering understanding and finding common ground.",
+        "External family pressures require open communication and setting boundaries within a relationship.",
+        "Building trust after a breach of privacy involves transparency, rebuilding boundaries, and ongoing communication.",
+        "Maintaining romance and spontaneity involves regular expressions of love, surprises, and shared experiences.",
+        "Being in a relationship with a recovering addict requires understanding, support, and open communication.",
+        "Societal beauty standards can impact body image; fostering self-esteem involves mutual encouragement.",
+        "Raising a blended family requires patience, communication, and creating a harmonious environment.",
+        "Balancing decision-making in a long-term partnership involves mutual respect and shared values.",
+        "Creating and nurturing shared dreams involves setting goals together and supporting each other's aspirations.",
+        "Impact of a partner's past relationships can be addressed through open communication and building trust.",
+        "Love languages influence communication and connection; understanding each other's love languages is important.",
+        "Jealousy can be navigated through open communication, building self-confidence, and trust.",
+        "Balancing alone time and togetherness with introverted partners requires understanding and respecting personal needs.",
+        "Celebrating cultural and religious holidays together involves mutual respect and finding shared traditions.",
+        "Coping with a partner's chronic illness involves empathy, communication, and adapting together.",
+        "Social media's impact on trust and communication requires digital boundaries and open conversations.",
+        "Decision to get married involves discussions on long-term goals, values, and mutual commitment.",
+        "Dealing with consequences of infidelity involves open communication, therapy, and a commitment to rebuilding trust.",
+        "External influences, such as friends, can impact relationship dynamics; maintaining boundaries is important.",
+        "Balancing personal space during stress in a relationship involves communication and mutual understanding.",
+        "Maintaining individual identity while building a life together requires self-reflection and supportive communication.",
+        "Addressing the impact of past trauma on a partner's ability to trust involves patience and professional guidance.",
+        "Challenges and rewards of open or polyamorous relationships require clear communication and consent.",
+        "Influence of family values on relationship expectations involves finding common ground and open communication.",
+        "Coping with aftermath of a significant argument involves effective communication and rebuilding connection.",
+        "Creating and sustaining a healthy sexual connection involves open communication, exploration, and mutual satisfaction."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can shared spiritual practices enhance a relationship?",
+        "Balancing individual growth and shared life goals in a partnership",
+        "Navigating the impact of a partner's career success on the relationship",
+        "Coping with the challenges of maintaining a long-distance relationship",
+        "Exploring the influence of childhood role models on relationship dynamics",
+        "Fostering creativity and innovation in a romantic partnership",
+        "Addressing imbalances in emotional labor within a relationship",
+        "The role of gratitude in resolving conflicts and promoting understanding",
+        "Dealing with societal pressure regarding relationship milestones",
+        "Tips for navigating relationship expectations within diverse cultural contexts",
+        "How to sustain a sense of individual identity within a committed relationship?",
+        "Coping with the strain of external stressors on a romantic partnership",
+        "Navigating differing love languages in a relationship",
+        "Addressing trust issues arising from past relationship experiences",
+        "The impact of societal norms on same-sex relationships",
+        "Balancing personal space and quality time in cohabiting relationships",
+        "How to cultivate resilience during challenging phases in a relationship?",
+        "Coping with the changes in intimacy levels over the course of a relationship",
+        "Navigating generational gaps in attitudes toward technology in relationships",
+        "The role of vulnerability in deepening emotional connections",
+        "Addressing jealousy in relationships through open communication",
+        "Tips for building a foundation of friendship in a romantic relationship",
+        "Coping with the challenges of maintaining friendships outside of a romantic relationship",
+        "Navigating the complexities of relationships in the age of social media",
+        "How can couples support each other's personal and professional growth?"
+      ],
+      "responses": [
+        "Shared spiritual practices can enhance a relationship by fostering a deeper connection and shared values.",
+        "Balancing individual growth and shared life goals involves open communication and mutual support.",
+        "A partner's career success can impact a relationship; maintaining open communication is key.",
+        "Maintaining a long-distance relationship requires communication, trust, and regular connection.",
+        "Childhood role models can influence relationship dynamics; awareness and communication are crucial.",
+        "Fostering creativity and innovation in a relationship involves shared projects and mutual encouragement.",
+        "Addressing imbalances in emotional labor requires open communication and a shared commitment to equity.",
+        "Gratitude plays a role in resolving conflicts and promoting understanding in a relationship.",
+        "Dealing with societal pressure regarding relationship milestones involves setting personalized goals and boundaries.",
+        "Navigating relationship expectations in diverse cultural contexts requires cultural competence and open dialogue.",
+        "Sustaining individual identity within a relationship involves self-reflection and supportive communication.",
+        "Coping with external stressors on a romantic partnership involves teamwork and stress management strategies.",
+        "Differing love languages in a relationship can be navigated through communication and understanding each other's needs.",
+        "Addressing trust issues from past relationship experiences requires transparency and rebuilding trust over time.",
+        "Societal norms can impact same-sex relationships; creating a supportive environment is essential.",
+        "Balancing personal space and quality time in cohabiting relationships involves mutual respect and clear communication.",
+        "Cultivating resilience in a relationship during challenging phases involves communication and shared coping strategies.",
+        "Changes in intimacy levels over time can be navigated through open communication and adaptability.",
+        "Generational gaps in attitudes toward technology in relationships require compromise and understanding.",
+        "Vulnerability plays a crucial role in deepening emotional connections; fostering trust is essential.",
+        "Addressing jealousy in relationships involves open communication and building self-confidence.",
+        "Building a foundation of friendship in a romantic relationship involves shared interests and mutual understanding.",
+        "Coping with the challenges of maintaining friendships outside of a romantic relationship involves balance and communication.",
+        "Navigating relationships in the age of social media requires digital boundaries and shared expectations.",
+        "Supporting each other's personal and professional growth involves encouragement, communication, and shared goals."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can past traumas impact intimate relationships?",
+        "Navigating the complexities of an intercultural relationship",
+        "Advice for couples facing infertility challenges",
+        "Balancing career ambitions with a committed relationship",
+        "Coping with the loss of intimacy in a long-term relationship",
+        "Addressing codependency issues in a relationship",
+        "Overcoming trust issues after infidelity",
+        "The role of forgiveness in rebuilding a strained relationship",
+        "Exploring the impact of childhood attachment styles on adult relationships",
+        "Tips for maintaining a healthy sex life in a long-term relationship",
+        "How to support a partner with a chronic illness?",
+        "The influence of social media on modern relationships",
+        "Dealing with emotional intimacy barriers in a relationship",
+        "Navigating the decision to start a family together",
+        "Coping with a partner's mental health crisis",
+        "Balancing independence and togetherness in a relationship",
+        "Addressing communication breakdowns in a relationship",
+        "The impact of financial stress on relationships",
+        "Navigating power dynamics in relationships",
+        "Building resilience in the face of relationship challenges",
+        "Dealing with conflicting values in a relationship",
+        "The importance of self-love in sustaining a healthy relationship",
+        "Supporting a partner through major life transitions",
+        "Understanding the role of vulnerability in building trust",
+        "Exploring alternative relationship structures and dynamics"
+      ],
+      "responses": [
+        "Past traumas can impact relationships; seeking therapy together can help navigate and heal.",
+        "Intercultural relationships require open-mindedness, communication, and a celebration of diversity.",
+        "Facing infertility challenges as a couple may involve seeking professional help and emotional support.",
+        "Balancing career ambitions with a committed relationship requires communication, shared goals, and mutual support.",
+        "Coping with the loss of intimacy involves open communication, therapy, and rediscovering emotional connection.",
+        "Addressing codependency issues involves setting boundaries, fostering independence, and seeking individual growth.",
+        "Overcoming trust issues after infidelity requires transparency, counseling, and rebuilding emotional connections.",
+        "Forgiveness plays a crucial role in rebuilding strained relationships; therapy can aid in this process.",
+        "Childhood attachment styles can impact adult relationships; understanding and addressing them is beneficial.",
+        "Maintaining a healthy sex life involves communication, experimentation, and prioritizing intimacy.",
+        "Supporting a partner with a chronic illness requires empathy, communication, and adapting together.",
+        "Social media's impact on relationships can be managed through communication, digital boundaries, and shared values.",
+        "Dealing with emotional intimacy barriers involves creating a safe space, vulnerability, and patience.",
+        "Deciding to start a family involves open communication, shared goals, and mutual readiness.",
+        "Coping with a partner's mental health crisis requires empathy, support, and professional help.",
+        "Balancing independence and togetherness involves respecting personal space and fostering individual growth.",
+        "Addressing communication breakdowns requires active listening, empathy, and seeking solutions together.",
+        "Financial stress can impact relationships; open communication and financial planning are essential.",
+        "Navigating power dynamics involves mutual respect, communication, and equal decision-making.",
+        "Building resilience in relationships involves adapting to challenges, learning from experiences, and seeking support.",
+        "Dealing with conflicting values requires compromise, communication, and finding common ground.",
+        "Self-love is vital for sustaining a healthy relationship; prioritize individual well-being and personal growth.",
+        "Supporting a partner through major life transitions involves empathy, flexibility, and shared decision-making.",
+        "Understanding the role of vulnerability is crucial for building trust and deepening emotional connections.",
+        "Exploring alternative relationship structures requires open communication, consent, and mutual understanding."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can past traumas impact intimate relationships?",
+        "Navigating the complexities of an intercultural relationship",
+        "Advice for couples facing infertility challenges",
+        "Balancing career ambitions with a committed relationship",
+        "Coping with the loss of intimacy in a long-term relationship",
+        "Addressing codependency issues in a relationship",
+        "Overcoming trust issues after infidelity",
+        "The role of forgiveness in rebuilding a strained relationship",
+        "Exploring the impact of childhood attachment styles on adult relationships",
+        "Tips for maintaining a healthy sex life in a long-term relationship",
+        "How to support a partner with a chronic illness?",
+        "The influence of social media on modern relationships",
+        "Dealing with emotional intimacy barriers in a relationship",
+        "Navigating the decision to start a family together",
+        "Coping with a partner's mental health crisis",
+        "Balancing independence and togetherness in a relationship",
+        "Addressing communication breakdowns in a relationship",
+        "The impact of financial stress on relationships",
+        "Navigating power dynamics in relationships",
+        "Building resilience in the face of relationship challenges",
+        "Dealing with conflicting values in a relationship",
+        "The importance of self-love in sustaining a healthy relationship",
+        "Supporting a partner through major life transitions",
+        "Understanding the role of vulnerability in building trust",
+        "Exploring alternative relationship structures and dynamics"
+      ],
+      "responses": [
+        "Past traumas can impact relationships; seeking therapy together can help navigate and heal.",
+        "Intercultural relationships require open-mindedness, communication, and a celebration of diversity.",
+        "Facing infertility challenges as a couple may involve seeking professional help and emotional support.",
+        "Balancing career ambitions with a committed relationship requires communication, shared goals, and mutual support.",
+        "Coping with the loss of intimacy involves open communication, therapy, and rediscovering emotional connection.",
+        "Addressing codependency issues involves setting boundaries, fostering independence, and seeking individual growth.",
+        "Overcoming trust issues after infidelity requires transparency, counseling, and rebuilding emotional connections.",
+        "Forgiveness plays a crucial role in rebuilding strained relationships; therapy can aid in this process.",
+        "Childhood attachment styles can impact adult relationships; understanding and addressing them is beneficial.",
+        "Maintaining a healthy sex life involves communication, experimentation, and prioritizing intimacy.",
+        "Supporting a partner with a chronic illness requires empathy, communication, and adapting together.",
+        "Social media's impact on relationships can be managed through communication, digital boundaries, and shared values.",
+        "Dealing with emotional intimacy barriers involves creating a safe space, vulnerability, and patience.",
+        "Deciding to start a family involves open communication, shared goals, and mutual readiness.",
+        "Coping with a partner's mental health crisis requires empathy, support, and professional help.",
+        "Balancing independence and togetherness involves respecting personal space and fostering individual growth.",
+        "Addressing communication breakdowns requires active listening, empathy, and seeking solutions together.",
+        "Financial stress can impact relationships; open communication and financial planning are essential.",
+        "Navigating power dynamics involves mutual respect, communication, and equal decision-making.",
+        "Building resilience in relationships involves adapting to challenges, learning from experiences, and seeking support.",
+        "Dealing with conflicting values requires compromise, communication, and finding common ground.",
+        "Self-love is vital for sustaining a healthy relationship; prioritize individual well-being and personal growth.",
+        "Supporting a partner through major life transitions involves empathy, flexibility, and shared decision-making.",
+        "Understanding the role of vulnerability is crucial for building trust and deepening emotional connections.",
+        "Exploring alternative relationship structures requires open communication, consent, and mutual understanding."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can a shared hobby strengthen a relationship?",
+        "Navigating the impact of long-distance relationships on mental health",
+        "Advice for rebuilding trust after financial betrayal in a relationship",
+        "Balancing quality time with friends and maintaining a romantic relationship",
+        "Coping with cultural differences in parenting approaches",
+        "The role of gratitude in sustaining a healthy relationship",
+        "Addressing intimacy concerns due to body image issues",
+        "Tips for fostering emotional intelligence in a relationship",
+        "Navigating the dating scene as a single parent",
+        "Supporting a partner through career transitions and uncertainties",
+        "How can spiritual beliefs impact a relationship?",
+        "Coping with a partner's mid-life crisis and changes in priorities",
+        "Balancing individual goals with shared relationship aspirations",
+        "Dealing with generational gaps in perspectives on relationships",
+        "The influence of societal expectations on relationship satisfaction",
+        "Addressing the impact of past traumas on a partner's sexual health",
+        "Fostering a sense of adventure and spontaneity in a long-term relationship",
+        "Tips for maintaining a strong emotional connection during periods of stress",
+        "Navigating open communication about desires and fantasies in a relationship",
+        "Coping with the challenges of a bi-cultural relationship",
+        "The role of humor in diffusing conflicts and strengthening bonds",
+        "Building trust after a breach of privacy in a relationship",
+        "Exploring the impact of childhood friendships on adult romantic relationships",
+        "Advice for rekindling the spark in a long-term relationship",
+        "How can a couple create shared financial goals for a secure future?"
+      ],
+      "responses": [
+        "Shared hobbies can strengthen a relationship by fostering mutual interests and creating shared experiences.",
+        "Long-distance relationships can impact mental health; regular communication and visits are essential for maintaining connection.",
+        "Rebuilding trust after financial betrayal involves open communication, financial planning, and seeking professional advice.",
+        "Balancing quality time with friends and maintaining a romantic relationship requires communication and setting boundaries.",
+        "Cultural differences in parenting approaches can be navigated through understanding, compromise, and shared values.",
+        "Gratitude plays a vital role in sustaining a healthy relationship; expressing appreciation fosters positive connection.",
+        "Addressing intimacy concerns due to body image issues involves open communication, empathy, and reassurance.",
+        "Fostering emotional intelligence in a relationship involves active listening, empathy, and self-awareness.",
+        "Navigating the dating scene as a single parent requires balance, communication, and finding supportive partners.",
+        "Supporting a partner through career transitions involves empathy, communication, and shared decision-making.",
+        "Spiritual beliefs can impact a relationship; open dialogue and respect for each other's beliefs are crucial.",
+        "Coping with a partner's mid-life crisis involves understanding, patience, and exploring shared goals.",
+        "Balancing individual goals with shared aspirations involves compromise, communication, and mutual support.",
+        "Generational gaps in perspectives on relationships can be addressed through open communication and mutual understanding.",
+        "Societal expectations on relationships can influence satisfaction; prioritizing authentic connection over external expectations is key.",
+        "Addressing the impact of past traumas on sexual health involves sensitivity, support, and professional guidance.",
+        "Maintaining a strong emotional connection during periods of stress requires communication, empathy, and shared coping strategies.",
+        "Open communication about desires and fantasies fosters understanding and connection in a relationship.",
+        "Coping with the challenges of a bi-cultural relationship involves celebrating diversity, communication, and mutual respect.",
+        "Humor plays a role in diffusing conflicts and strengthening bonds; laughter can be a powerful tool in relationships.",
+        "Building trust after a breach of privacy involves transparency, rebuilding boundaries, and ongoing communication.",
+        "Childhood friendships can impact adult romantic relationships; understanding and respecting these influences is important.",
+        "Rekindling the spark in a long-term relationship involves spontaneity, shared experiences, and open communication.",
+        "Creating shared financial goals involves open communication, financial planning, and aligning priorities for a secure future."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can past traumas impact intimate relationships?",
+        "Navigating the complexities of an intercultural relationship",
+        "Advice for couples facing infertility challenges",
+        "Balancing career ambitions with a committed relationship",
+        "Coping with the loss of intimacy in a long-term relationship",
+        "Addressing codependency issues in a relationship",
+        "Overcoming trust issues after infidelity",
+        "The role of forgiveness in rebuilding a strained relationship",
+        "Exploring the impact of childhood attachment styles on adult relationships",
+        "Tips for maintaining a healthy sex life in a long-term relationship",
+        "How to support a partner with a chronic illness?",
+        "The influence of social media on modern relationships",
+        "Dealing with emotional intimacy barriers in a relationship",
+        "Navigating the decision to start a family together",
+        "Coping with a partner's mental health crisis",
+        "Balancing independence and togetherness in a relationship",
+        "Addressing communication breakdowns in a relationship",
+        "The impact of financial stress on relationships",
+        "Navigating power dynamics in relationships",
+        "Building resilience in the face of relationship challenges",
+        "Dealing with conflicting values in a relationship",
+        "The importance of self-love in sustaining a healthy relationship",
+        "Supporting a partner through major life transitions",
+        "Understanding the role of vulnerability in building trust",
+        "Exploring alternative relationship structures and dynamics"
+      ],
+      "responses": [
+        "Past traumas can impact relationships; seeking therapy together can help navigate and heal.",
+        "Intercultural relationships require open-mindedness, communication, and a celebration of diversity.",
+        "Facing infertility challenges as a couple may involve seeking professional help and emotional support.",
+        "Balancing career ambitions with a committed relationship requires communication, shared goals, and mutual support.",
+        "Coping with the loss of intimacy involves open communication, therapy, and rediscovering emotional connection.",
+        "Addressing codependency issues involves setting boundaries, fostering independence, and seeking individual growth.",
+        "Overcoming trust issues after infidelity requires transparency, counseling, and rebuilding emotional connections.",
+        "Forgiveness plays a crucial role in rebuilding strained relationships; therapy can aid in this process.",
+        "Childhood attachment styles can impact adult relationships; understanding and addressing them is beneficial.",
+        "Maintaining a healthy sex life involves communication, experimentation, and prioritizing intimacy.",
+        "Supporting a partner with a chronic illness requires empathy, communication, and adapting together.",
+        "Social media's impact on relationships can be managed through communication, digital boundaries, and shared values.",
+        "Dealing with emotional intimacy barriers involves creating a safe space, vulnerability, and patience.",
+        "Deciding to start a family involves open communication, shared goals, and mutual readiness.",
+        "Coping with a partner's mental health crisis requires empathy, support, and professional help.",
+        "Balancing independence and togetherness involves respecting personal space and fostering individual growth.",
+        "Addressing communication breakdowns requires active listening, empathy, and seeking solutions together.",
+        "Financial stress can impact relationships; open communication and financial planning are essential.",
+        "Navigating power dynamics involves mutual respect, communication, and equal decision-making.",
+        "Building resilience in relationships involves adapting to challenges, learning from experiences, and seeking support.",
+        "Dealing with conflicting values requires compromise, communication, and finding common ground.",
+        "Self-love is vital for sustaining a healthy relationship; prioritize individual well-being and personal growth.",
+        "Supporting a partner through major life transitions involves empathy, flexibility, and shared decision-making.",
+        "Understanding the role of vulnerability is crucial for building trust and deepening emotional connections.",
+        "Exploring alternative relationship structures requires open communication, consent, and mutual understanding."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "relationships",
+      "patterns": [
+        "How can I improve communication in my relationship?",
+        "Tips for fostering trust in a relationship",
+        "What are healthy boundaries in a relationship?",
+        "How to navigate conflicts with a partner?",
+        "Advice for maintaining a long-distance relationship",
+        "What role does empathy play in relationships?",
+        "Tips for keeping the romance alive in a long-term relationship",
+        "Dealing with jealousy in a relationship",
+        "How to support a partner with mental health struggles?",
+        "Building a strong emotional connection with your partner",
+        "Navigating the challenges of blending families",
+        "Tips for effective co-parenting after a breakup",
+        "Balancing personal space and togetherness in a relationship",
+        "How to rebuild trust after a betrayal in a relationship?",
+        "Coping with the end of a relationship and moving forward",
+        "Advice for dating in the digital age",
+        "Building a healthy relationship with yourself before others",
+        "How to express love and appreciation in a relationship?",
+        "Navigating cultural differences in a relationship",
+        "What to do when feeling disconnected from your partner?",
+        "Tips for maintaining friendships while in a romantic relationship",
+        "How to handle relationship stress without affecting mental health?",
+        "Building a support system for your relationship",
+        "Coping with a partner's loss or grief together",
+        "How to bring up difficult topics in a relationship with sensitivity?"
+      ],
+      "responses": [
+        "Improving communication involves active listening, expressing feelings, and being open to understanding your partner's perspective.",
+        "Fostering trust requires transparency, reliability, and open communication in a relationship.",
+        "Healthy boundaries involve clear communication, mutual respect, and understanding each other's needs.",
+        "Navigating conflicts includes active listening, finding common ground, and seeking solutions together.",
+        "Maintaining a long-distance relationship requires effective communication, trust, and planning visits when possible.",
+        "Empathy is crucial; try to understand and share your partner's feelings, fostering a deeper emotional connection.",
+        "Keeping romance alive involves regular expressions of love, surprises, and shared experiences.",
+        "Dealing with jealousy requires open communication, building trust, and addressing insecurities.",
+        "Supporting a partner with mental health struggles involves empathy, encouragement, and encouraging professional help.",
+        "Building an emotional connection includes sharing vulnerabilities, expressing feelings, and being present for each other.",
+        "Blending families requires patience, clear communication, and creating a harmonious environment.",
+        "Effective co-parenting post-breakup involves clear communication, consistency, and prioritizing the child's well-being.",
+        "Balancing personal space and togetherness requires open communication and respecting each other's needs.",
+        "Rebuilding trust after betrayal involves open communication, counseling, and demonstrating commitment to change.",
+        "Coping with the end of a relationship includes self-reflection, seeking support, and focusing on personal growth.",
+        "Dating in the digital age involves clear communication, setting boundaries, and being true to yourself.",
+        "Building a healthy relationship with yourself involves self-care, self-compassion, and self-reflection.",
+        "Expressing love and appreciation includes verbal affirmations, acts of kindness, and quality time together.",
+        "Navigating cultural differences requires open-mindedness, communication, and a willingness to learn from each other.",
+        "Reconnecting with your partner involves open communication, quality time, and shared activities.",
+        "Maintaining friendships in a relationship involves balance, communication, and respecting each other's social lives.",
+        "Handling relationship stress without affecting mental health includes self-care, communication, and seeking support.",
+        "Building a support system involves nurturing relationships with friends and family who contribute positively to your relationship.",
+        "Coping with a partner's loss or grief together involves empathy, support, and open communication.",
+        "Bringing up difficult topics requires sensitivity, choosing the right time, and expressing your feelings calmly."
+      ],
+      "context_set": ""
+    }
+    ]
+  }
