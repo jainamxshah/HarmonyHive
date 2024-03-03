@@ -21,7 +21,7 @@ def bag_of_words(sentence, words):
     return bag
 
 # Load intents from JSON file
-with open('chatbot\intents.json', 'r') as file:
+with open('.\chatbot\intents.json', 'r') as file:
     intents = json.load(file)
 
 # Tokenize patterns
